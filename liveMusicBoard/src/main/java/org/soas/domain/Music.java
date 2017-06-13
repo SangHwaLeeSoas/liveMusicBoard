@@ -7,9 +7,9 @@ public class Music {
 	
 	private int music_idx;
 	private int board_idx;
-	private String title;
-	private int time;  // 초단위
-	private int size;  // byte단위
+	private String music_name;
+	private int music_time;  // 초단위
+	private int music_size;  // byte단위
 	private Date regDate;
 	private Date updateDate;
 	
@@ -26,23 +26,23 @@ public class Music {
 	public void setBoard_idx(int board_idx) {
 		this.board_idx = board_idx;
 	}
-	public String getTitle() {
-		return title;
+	public String getMusic_name() {
+		return music_name;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setMusic_name(String music_name) {
+		this.music_name = music_name;
 	}
-	public int getTime() {
-		return time;
+	public int getMusic_time() {
+		return music_time;
 	}
-	public void setTime(int time) {
-		this.time = time;
+	public void setMusic_time(int music_time) {
+		this.music_time = music_time;
 	}
-	public int getSize() {
-		return size;
+	public int getMusic_size() {
+		return music_size;
 	}
-	public void setSize(int size) {
-		this.size = size;
+	public void setMusic_size(int music_size) {
+		this.music_size = music_size;
 	}
 	public Date getRegDate() {
 		return regDate;
@@ -56,11 +56,12 @@ public class Music {
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Music [music_idx=" + music_idx + ", board_idx=" + board_idx + ", title=" + title + ", time=" + time
-				+ ", size=" + size + "]";
+		return "Music [music_idx=" + music_idx + ", board_idx=" + board_idx + ", music_name=" + music_name
+				+ ", music_time=" + music_time + ", music_size=" + music_size + ", regDate=" + regDate + ", updateDate="
+				+ updateDate + "]";
 	}
 	
 }

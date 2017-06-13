@@ -7,8 +7,8 @@ public class Boards {
 	
 	private int board_idx;
 	private int member_idx;
-	private String title;
-	private String content;
+	private String board_name;
+	private String board_content;
 	private int likeCount;
 	private int viewCount;
 	private Date regDate;
@@ -27,17 +27,17 @@ public class Boards {
 	public void setMember_idx(int member_idx) {
 		this.member_idx = member_idx;
 	}
-	public String getTitle() {
-		return title;
+	public String getBoard_name() {
+		return board_name;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setBoard_name(String board_name) {
+		this.board_name = board_name;
 	}
-	public String getContent() {
-		return content;
+	public String getBoard_content() {
+		return board_content;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setBoard_content(String board_content) {
+		this.board_content = board_content;
 	}
 	public int getLikeCount() {
 		return likeCount;
@@ -63,12 +63,12 @@ public class Boards {
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Boards [board_idx=" + board_idx + ", member_idx=" + member_idx + ", title=" + title + ", content="
-				+ content + ", likeCount=" + likeCount + ", viewCount=" + viewCount + ", regDate=" + regDate
-				+ ", updateDate=" + updateDate + "]";
+		return "Boards [board_idx=" + board_idx + ", member_idx=" + member_idx + ", board_name=" + board_name
+				+ ", board_content=" + board_content + ", likeCount=" + likeCount + ", viewCount=" + viewCount
+				+ ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
 	}
-		
+	
 }

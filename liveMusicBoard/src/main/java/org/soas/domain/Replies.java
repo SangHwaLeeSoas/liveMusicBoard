@@ -8,7 +8,7 @@ public class Replies {
 	private int reply_idx;
 	private int board_idx;
 	private int member_idx;
-	private String content;
+	private String reply_content;
 	private Date regDate;
 	private Date updateDate;
 	
@@ -31,11 +31,11 @@ public class Replies {
 	public void setMember_idx(int member_idx) {
 		this.member_idx = member_idx;
 	}
-	public String getContent() {
-		return content;
+	public String getReply_content() {
+		return reply_content;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setReply_content(String reply_content) {
+		this.reply_content = reply_content;
 	}
 	public Date getRegDate() {
 		return regDate;
@@ -53,7 +53,7 @@ public class Replies {
 	@Override
 	public String toString() {
 		return "Replies [reply_idx=" + reply_idx + ", board_idx=" + board_idx + ", member_idx=" + member_idx
-				+ ", content=" + content + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
+				+ ", reply_content=" + reply_content + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
 	}
 	
 }

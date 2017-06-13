@@ -7,9 +7,9 @@ public class Videos {
 	
 	private int video_idx;
 	private int board_idx;
-	private String title;
-	private int time;  // 초단위
-	private int size;  // byte단위
+	private String board_name;
+	private int board_time;  // 초단위
+	private int board_size;  // byte단위
 	private Date regDate;
 	private Date updateDate;
 	
@@ -26,23 +26,23 @@ public class Videos {
 	public void setBoard_idx(int board_idx) {
 		this.board_idx = board_idx;
 	}
-	public String getTitle() {
-		return title;
+	public String getBoard_name() {
+		return board_name;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setBoard_name(String board_name) {
+		this.board_name = board_name;
 	}
-	public int getTime() {
-		return time;
+	public int getBoard_time() {
+		return board_time;
 	}
-	public void setTime(int time) {
-		this.time = time;
+	public void setBoard_time(int board_time) {
+		this.board_time = board_time;
 	}
-	public int getSize() {
-		return size;
+	public int getBoard_size() {
+		return board_size;
 	}
-	public void setSize(int size) {
-		this.size = size;
+	public void setBoard_size(int board_size) {
+		this.board_size = board_size;
 	}
 	public Date getRegDate() {
 		return regDate;
@@ -56,11 +56,12 @@ public class Videos {
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Videos [video_idx=" + video_idx + ", board_idx=" + board_idx + ", title=" + title + ", time=" + time
-				+ ", size=" + size + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
+		return "Videos [video_idx=" + video_idx + ", board_idx=" + board_idx + ", board_name=" + board_name
+				+ ", board_time=" + board_time + ", board_size=" + board_size + ", regDate=" + regDate + ", updateDate="
+				+ updateDate + "]";
 	}
 	
 }

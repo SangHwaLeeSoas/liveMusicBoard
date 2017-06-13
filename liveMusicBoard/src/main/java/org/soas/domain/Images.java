@@ -7,8 +7,8 @@ public class Images {
 	
 	private int image_idx;
 	private int board_idx;
-	private String title;
-	private int size;  // byte단윈
+	private String image_name;
+	private int image_size;  // byte단윈
 	private Date regDate;
 	private Date updateDate;
 	
@@ -25,17 +25,17 @@ public class Images {
 	public void setBoard_idx(int board_idx) {
 		this.board_idx = board_idx;
 	}
-	public String getTitle() {
-		return title;
+	public String getImage_name() {
+		return image_name;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setImage_name(String image_name) {
+		this.image_name = image_name;
 	}
-	public int getSize() {
-		return size;
+	public int getImage_size() {
+		return image_size;
 	}
-	public void setSize(int size) {
-		this.size = size;
+	public void setImage_size(int image_size) {
+		this.image_size = image_size;
 	}
 	public Date getRegDate() {
 		return regDate;
@@ -52,8 +52,8 @@ public class Images {
 
 	@Override
 	public String toString() {
-		return "Images [image_idx=" + image_idx + ", board_idx=" + board_idx + ", title=" + title + ", size=" + size
-				+ ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
+		return "Images [image_idx=" + image_idx + ", board_idx=" + board_idx + ", image_name=" + image_name
+				+ ", image_size=" + image_size + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
 	}
-
+	
 }
